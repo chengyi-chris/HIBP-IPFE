@@ -6,7 +6,7 @@ This project provides PoC implementations to evaluate the performance of the fol
 
 The code implement of Hierarchical identity-based puncturable inner product functional encryption
 
-For bilinear-pairing scheme (SDH+21), we implement them by using PBC library with Type-A pairing (160, 512) for 80-bit security.
+For bilinear-pairing scheme (SDH+21 and ours), we implement them by using PBC library with Type-A pairing (160, 512) for 80-bit security.
 
 ## Required library
 
@@ -59,6 +59,6 @@ python3  ./Test performance/keypun.py
 | ----------------- | --------------------- | ------------------- |
 | ![keygen](./keygen.png) | ![enc](./enc.png) | ![dec](./dec.png) |
 
-|   Key Delegation  |      Key Punctrue     | 
+|   Key Delegation  |      Key Puncture     | 
 | ----------------- | --------------------- |
 | ![keydel](./keydel.png) | ![keypun](./keypun.png) |
