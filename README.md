@@ -1,54 +1,47 @@
 # HIBP-IPFE
-This project provides PoC implementations to evaluate the performance of the following schemes:
+This project provides PoC implementations to evaluate the performance of the following schemes, which adopts the PBC library with Type-A pairing (160, 512) for 80-bit security.
 
-1. SDH+21 - Information Science - [Hierarchical identity-based inner product functional encryption](https://doi.org/10.1016/j.ins.2021.05.062) 
+- our scheme: Hierarchical identity-based puncturable inner product functional encryption
+- SDH+21's work: [Hierarchical identity-based inner product functional encryption](https://doi.org/10.1016/j.ins.2021.05.062))
 
 
-The code implemention of Hierarchical identity-based puncturable inner product functional encryption
-
-For the bilinear-pairing schemes (SDH+21 and ours), we implement them by using PBC library with Type-A pairing (160, 512) for 80-bit security.
-
-## Required library
+## Required libraries
 
 - [GMP 5.x](http://gmplib.org/)
 - [PBC](http://crypto.stanford.edu/pbc/news.html)
 - [OPENSSL](http://www.openssl.org/)
 - [Charm-crypto](https://jhuisi.github.io/charm/install_source.html)
 
-## Perform code
+## Run
 
-1. For Song et al. scheme (SDH+21):
+1. SDH+21:
 
    ```
    python3 HIB-IPFE.py
    ```
 
-2. For our HIBP-IPFE scheme:
+2. Ours:
 
    ```
    python3 HIBP-IPFE.py
    ```
 
-To execute the time cost of scheme for 500 times: we add `cal_time() ` in each algorithm, you can perform which operations or algorithm for simple test.
-
-## Test performance
-
-To generate the performance for each algorithm, we provide the result code in the below folder.
+## Test
 
 ```
-## For key generation algorithm
+## Key generation algorithm
 python3 ./Test performance/keygen.py
 
-## For encryption algorithm
+## Encryption algorithm
 python3 ./Test performance/enc.py
 
-## For decryption algorithm
+## Decryption algorithm
 python3  ./Test performance/dec.py
 
-## For key delegation algorithm
+## Key delegation algorithm
 python3  ./Test performance/keydel.py
 
-## For key puncture algorithm
+## Key puncture algorithm
 python3  ./Test performance/keypun.py
 ```
 
