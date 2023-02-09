@@ -4,9 +4,9 @@ This project provides PoC implementations to evaluate the performance of the fol
 1. SDH+21 - Information Science - [Hierarchical identity-based inner product functional encryption](https://doi.org/10.1016/j.ins.2021.05.062) 
 
 
-The code implement of Hierarchical identity-based puncturable inner product functional encryption
+The code implemention of Hierarchical identity-based puncturable inner product functional encryption
 
-For bilinear-pairing scheme (SDH+21 and ours), we implement them by using PBC library with Type-A pairing (160, 512) for 80-bit security.
+For the bilinear-pairing scheme (SDH+21 and ours), we implement them by using PBC library with Type-A pairing (160, 512) for 80-bit security.
 
 ## Required library
 
@@ -29,7 +29,7 @@ For bilinear-pairing scheme (SDH+21 and ours), we implement them by using PBC li
    python3 HIBP-IPFE.py
    ```
 
-To execute the cost of scheme for 500 times: we add `cal_time() ` in each scheme, you can perform which operations or algorithm for simple test.
+To execute the time cost of scheme for 500 times: we add `cal_time() ` in each algorithm, you can perform which operations or algorithm for simple test.
 
 ## Test performance
 
