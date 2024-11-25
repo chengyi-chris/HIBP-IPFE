@@ -1,7 +1,10 @@
-# HIBP-IPFE
+# [HIBP-IPFE](https://doi.org/10.1049/2024/5535196)
+
+This is an official implementation of HIBP-IPFE proposed by our paper "[Privacy-enhanced Data Sharing Systems from Hierarchical ID-based Puncturable Functional Encryption with Inner Product Predicates](https://doi.org/10.1049/2024/5535196)". 
+
 This project provides PoC implementations to evaluate the performance of the following schemes, which adopts the PBC library with Type-A pairing (160, 512) for 80-bit security.
 
-- our scheme: Hierarchical identity-based puncturable inner product functional encryption
+- Our scheme: Hierarchical identity-based puncturable inner product functional encryption (HIBP-IPFE)
 - SDH+21's work: [Hierarchical identity-based inner product functional encryption](https://doi.org/10.1016/j.ins.2021.05.062)
 
 
